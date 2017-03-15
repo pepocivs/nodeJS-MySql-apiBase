@@ -5,12 +5,12 @@ module.exports = {
 };
 
 function get() {
-    return {
-      connectionLimit : 100,
-      host     : 'localhost',
-			database : 'myDB',
-      user     : 'myDBUser',
-      password : 'myPassword',
-      debug    : false
-  };
+	return {
+		connectionLimit : 100,
+		host     : 'localhost',
+		database : 'myDB',
+		user     : 'myDBUser',
+		password : 'myPassword',
+		debug    : false
+	};
 }
