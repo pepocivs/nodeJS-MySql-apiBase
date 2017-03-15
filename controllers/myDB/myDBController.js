@@ -36,8 +36,15 @@ function hasError(res, err) {
 
 function getFilters(req) {
   var filters = req.query || {};
+
+  // Securize filters
+  Object.keys(filters).forEach(function(key) {
+    filters[key] = (!parseInt(filters[key])>0) ? req.db.escape(filters[key]) : filters[key];
+  });
+
+  // Adding params to filters
   Object.keys(req.params).forEach(function(key) {
-    filters[key] = req.params[key];
+    filters[key] = (!parseInt(filters[key])>0) ? req.db.escape(req.params[key]) : req.params[key];
   });
   return filters;
 }

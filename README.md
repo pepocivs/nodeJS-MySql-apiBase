@@ -56,8 +56,8 @@ Wed Mar 15 2017 17:23:50 GMT+0100 (CET)
 ```
 
 Now we can make a call, by default
-http://localhost:4000/firstCall
-http://localhost:4000/firstCall?id=1 (1,2 or 3)
+http://localhost:4000/first-call
+http://localhost:4000/first-call?id=1 (1,2 or 3)
 
 ## Creating a new call
 1 - Create new route in `routes.js`

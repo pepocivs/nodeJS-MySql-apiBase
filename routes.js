@@ -17,7 +17,7 @@ function handleRoutes(router) {
 
     // You can add middleware to protect the call (FE: login middleware)
 
-    router.get('/firstCall', myDB.getFirstCall);
+    router.get('/first-call', myDB.getFirstCall);
 }
 
 module.exports = restRouter;
