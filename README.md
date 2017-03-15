@@ -5,7 +5,7 @@
 - [Introduction](#introduction)
 - [Install](#install)
 - [Working](#working)
-- [Creating a new call](#Creating-a-new-call)
+- [Creating a new call](#creating-a-new-call)
 
 ## Instroduction
 This is a lite backend developed in NodeJS that connect with a MySql database, does not
