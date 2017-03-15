@@ -96,3 +96,10 @@ var equivalences = {
 5 - Create a **format data function** in `/lib/dataConvert/myNewCallData.js`
 Usually we want to convert or reformat the returned object *(by default returns a json based on mySql table)*.
 For example maybe you want to proccess some part of this object, so for do than this is the place
+
+## Features
+* Multilanguage
+    This system is prepared to get multilanguage responses using i18n package. To use it you have to send the header `Accept-Language`, now are available `en_US` `es_ES`, but you can add more in `connection.js:43`
+
+* Login friendly
+    Moreover is also prepared to get X-Access-Token to protect some calls via middleware. To use it you have to send the header `X-Access-Token`.
